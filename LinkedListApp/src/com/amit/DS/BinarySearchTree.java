@@ -17,25 +17,28 @@ public class BinarySearchTree {
 			return n;
 		}
 		
+		
 		if(value > node.data){
 			n.right = insert(n.right, value);
 		} else if(value < node.data) {
 			n.left = insert(n.left, value);
 		}
 		
-		return n;
+//		return n;
+		return null;
 	}
 	
-//	public Node delete(Node node, int value) {
-//		if(node == null) {
-//			return null;
-//		}
-//		
-//		if(value < node.data) {
-//			node.left = delete(node.left, value);
-//		} else {
-//			node.right = delete(node.right, value);
-//		}
-//	}
+	public Node delete(Node node, int value) {
+		if(node == null) {
+			return null;
+		}
+		
+		if(value < node.data) {
+			node.left = delete(node.left, value);
+		} else {
+			node.right = delete(node.right, value);
+		}
+		return null;
+	}
 	
 }
