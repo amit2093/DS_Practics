@@ -26,16 +26,16 @@ public class BinarySearchTree {
 		return n;
 	}
 	
-	public Node delete(Node node, int value) {
-		if(node == null) {
-			return null;
-		}
-		
-		if(value < node.data) {
-			node.left = delete(node.left, value);
-		} else {
-			node.right = delete(node.right, value);
-		}
-	}
+//	public Node delete(Node node, int value) {
+//		if(node == null) {
+//			return null;
+//		}
+//		
+//		if(value < node.data) {
+//			node.left = delete(node.left, value);
+//		} else {
+//			node.right = delete(node.right, value);
+//		}
+//	}
 	
 }
