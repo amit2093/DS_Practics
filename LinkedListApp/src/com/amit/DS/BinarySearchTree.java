@@ -18,6 +18,8 @@ public class BinarySearchTree {
 		}
 		
 		
+		
+		
 		if(value > node.data){
 			n.right = insert(n.right, value);
 		} else if(value < node.data) {
