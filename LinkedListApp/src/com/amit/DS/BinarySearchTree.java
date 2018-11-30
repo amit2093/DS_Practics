@@ -24,8 +24,7 @@ public class BinarySearchTree {
 			n.left = insert(n.left, value);
 		}
 		
-//		return n;
-		return null;
+		return n;
 	}
 	
 	public Node delete(Node node, int value) {
