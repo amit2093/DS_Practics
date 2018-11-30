@@ -31,5 +31,6 @@ public class MainClass {
 		linkedList.clear();
 		System.out.println("After Clear");
 		linkedList.print();
+		
 	}
 }

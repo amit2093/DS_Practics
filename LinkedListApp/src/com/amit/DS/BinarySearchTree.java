@@ -36,6 +36,7 @@ public class BinarySearchTree {
 		} else {
 			node.right = delete(node.right, value);
 		}
+		
 		return null;
 	}
 	
