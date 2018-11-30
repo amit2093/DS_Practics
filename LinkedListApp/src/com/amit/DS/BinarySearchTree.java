@@ -30,7 +30,6 @@ public class BinarySearchTree {
 		if(node == null) {
 			return null;
 		}
-		//
 		
 		if(value < node.data) {
 			node.left = delete(node.left, value);
