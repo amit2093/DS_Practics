@@ -47,11 +47,10 @@ public class BinarySearchTree {
 			} else {
 				Node successor = getSuccessor(node);
 				node.data = successor.data;		// copy data
-				node.right = delete(node.right, value); //  check this value
+				node.right = delete(node.right, value); // check this value
 				return node;
 			}
 		}
-		
 		return node;
 	}
 	
@@ -64,7 +63,6 @@ public class BinarySearchTree {
 		while(temp.left != null) {
 			temp = temp.left;
 		}
-		
 		return temp;
 	}
 	
