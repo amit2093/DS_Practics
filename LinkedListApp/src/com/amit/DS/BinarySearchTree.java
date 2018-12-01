@@ -1,32 +1,26 @@
 package com.amit.DS;
 
 public class BinarySearchTree {
-
+	Node root;
 	class Node{
 		int data;
 		Node left, right;
 	}
 	
 	public Node insert(Node node, int value) {
-		Node n = null;
+		
 		if(node == null) {
-			n = new Node();
-			n.data = value;
-			n.left = null;
-			n.right = null;
-			return n;
-		}
-		
-		
-		// comment
+			root = new Node();
+			root.data = value;
+			return root;
+		} 
 		
 		if(value > node.data){
-			n.right = insert(n.right, value);
+			root.right = insert(root.right, value);
 		} else if(value < node.data) {
-			n.left = insert(n.left, value);
+			root.left = insert(root.left, value);
 		}
-		
-		return n;
+		return root;
 	}
 	
 	public Node delete(Node node, int value) {
@@ -34,7 +28,6 @@ public class BinarySearchTree {
 			return null;
 		}
 		
-		// comment
 		if(value < node.data) {
 			node.left = delete(node.left, value);
 		} else {
